@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/PaginaInicial.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <title>Página Principal</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="left-header">
+        <label for="image-upload">
+            <img src="/static/assets/img/logo.png" alt="Imagen 1" class="logoHeader">
+        </label>
+      </div>
+      <div class="right-header">
+        <a href="/selecUser/"><button>Iniciar Sesión</button></a>
+      </div>
+    </div>
+  </header>
+  <!-- Mueve la imagen aquí, debajo del encabezado -->
+  <img class="imagenEncabezado" src="/static/assets/img/imagenEncabezado.jpg" alt="Imagen de encabezado">
+
+  <section class="imagenesDescripcion">
+    <div class="imagenDescripcion">
+      <img src="/static/assets/img/calendario.png" alt="Imagen 1">
+      <p>Podrás organizar tu horario de una mejor forma</p>
+    </div>
+    <div class="imagenDescripcion">
+      <img src="/static/assets/img/lapiz.png" alt="Imagen 2">
+      <p>Conocerás las experiencias de tus compañeros</p>
+    </div>
+    <div class="imagenDescripcion">
+      <img src="/static/assets/img/libro.png" alt="Imagen 3">
+      <p>Podrás conocer  las metodologias de cada profesor</p>
+    </div>
+  </section>
+
+  <footer>
+    {%include 'include/footer.html'%}
+  </footer>
+</body>
+
+<script src="main.js" type="module"></script>
+
+</html>

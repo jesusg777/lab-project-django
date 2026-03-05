@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  min-height: 100%;
+  font-family: 'DM Sans', sans-serif;
+}
+
+header {
+  background-color: #FF6E1A;
+  text-align: center;
+  padding: 0px 10;
+  position: relative;
+  height: 11%;
+}
+
+.contenido-principal {
+  display: flex;
+  min-height: 70%;
+  height: 70%;
+
+}
+
+.contenedor-left {
+  width: 50%;
+  height: 100%;
+
+}
+
+.contenedor-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-nombre {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nombre-materia{
+  display: inline;
+}
+
+.comentarios {
+  width: 95%;
+  padding: 20px;
+  background-color: #ccc;
+  margin-left: 20px;
+  height: 85%;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+
+.comentarios div {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  min-height: 40px;
+  height: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.comentario-asunto {
+  font-weight: bold;
+}
+
+.button-list {
+  list-style: none;
+}
+
+.button-list li {
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  margin: 40px 0 40px 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.button-list .boton-agregar{
+  color: white;
+  background-color: #FF6E1A;
+  cursor: pointer;
+}
+
+/* Estilos del footer */
+footer {
+  height: 15%;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* Estilos para el contenedor del formulario */
+.container_detalle_materia {
+  width: 400px; /* Ancho del formulario */
+  margin: 50px auto; /* Centrar el formulario horizontalmente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para las etiquetas de los campos */
+.txt_negrita {
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para los campos de entrada */
+
+.contenido_detalle{
+  width: 100%; /* Ancho completo del contenedor */
+  padding: 15px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde con color gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* El tamaño incluye el borde y el relleno */
+  margin-bottom: 10px; /* Espaciado inferior entre campos */
+}
+
+.boton_volver {
+  background-color: #FF6E1A; /* Color de fondo verde */
+  color: white; /* Texto en blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+}
+
+/* Estilos para el botón de enviar al pasar el cursor */
+.boton_volverhover {
+  background-color: #ca5511; /* Color de fondo verde más oscuro */
+}

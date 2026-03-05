@@ -1,0 +1,129 @@
+/* Estilos del encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.header-top {
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
+    /*align-items: center;*/
+}
+
+.left-header {
+    position: relative;
+}
+
+.logoHeader {
+    margin-top: 0px;
+    height: 100%;
+}
+
+.image-upload {
+    cursor: pointer;
+}
+
+.half-circle {
+    width: 230px;
+    height: 110px;
+    background-color: #fff;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-header ul {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.right-header li {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.header-button {
+    background-color: #FF6E1A;
+    color: #fff;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-button:hover {
+    background-color: #ffffff6f;
+}
+
+
+.img-perfil {
+    height: 50px;
+    width: 50px;
+}
+
+.img-perfil img {
+    height: 100%;
+    width: 100%;
+}
+
+.desktop-menu {
+    /* Estilos base del menú */
+    position: absolute;
+    top: 75%; /* Ajusta la distancia desde la parte superior */
+    right: 3%; /* Ajusta la distancia desde el borde derecho */
+    width: 200px;
+    background-color: #ccc; /* Fondo oscuro */
+    border: 1px solid #222; /* Borde más oscuro */
+    border-radius: 20px; /* Bordes más redondeados */
+    padding: 10px;
+    display: none;
+    
+  }
+.desktop-menu.active {
+    display: block;
+    /* Otros estilos que desees aplicar cuando el menú está activo */
+  }
+  
+.menu-options {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+.menu-options button {
+    background-color: #555; /* Color de fondo más oscuro */
+    border: none;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 20px; /* Crea un rectángulo circular */
+    cursor: pointer;
+    text-align: center; /* Alinea el texto al centro */
+    display: block;
+    width: 100%; /* Ocupa todo el ancho */
+    margin-bottom: 5px;
+    
+  }  
+.menu-options button a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayados */
+    font-family: 'DM Sans', sans-serif; /* Cambia la fuente del texto */
+  }
+  
+.menu-options button:hover a {
+    color: rgb(188, 188, 169); /* Color del texto al pasar el mouse */
+  }
+  

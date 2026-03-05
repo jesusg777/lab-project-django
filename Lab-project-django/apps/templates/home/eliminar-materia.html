@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/eliminarMateria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+        rel="stylesheet">
+    <title>Página Principal</title>
+</head>
+
+<body>
+    <header>
+        {%include 'include/header.html'%}
+    </header>
+
+    
+        <div class="titulo-page">
+            <p>Clases ingresadas</p>
+        </div>
+
+    <div class="contenedor-principal">
+        <div class="cuadrado-izquierdo">
+            <div class="caja-gris">
+                    
+            </div>
+        </div>
+
+        <div class="cuadrado-derecho">
+            <div class="clase-info active" >
+                <div class="img-profesor">
+                    <img src="/static/assets/img/profesor.png" alt="">
+                </div>
+                
+                <div class="info">
+                    <p class="nombre-materia"></p>
+                    <p class="nombre-profesor"></p>
+                    <p class="horario"></p>
+                    <p class="valoracion"></p>
+                </div>
+
+                <div class="boton-ver">
+                    <button>Eliminar materia</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+        
+    
+
+    <footer>
+        {%include 'include/footer.html'%}
+      </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

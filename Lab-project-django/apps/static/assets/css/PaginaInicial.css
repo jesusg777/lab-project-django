@@ -1,0 +1,135 @@
+/* Estilos del encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    background-color: #FF6E1A;
+    text-align: center;
+    padding: 0px 10;
+    position: relative;
+    height: 70px;
+}
+
+.header-top {
+    display:flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+}
+
+.left-header {
+    position: relative;
+}
+
+img{
+    margin-top: 0px;
+    height: 70px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.half-circle {
+    width: 230px;
+    height: 110px;
+    background-color: #fff;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.imagenEncabezado{
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilos del botón de Iniciar Sesión */
+button {
+    background-color: #FF6E1A;
+    color: #fff;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+button:hover {
+    background-color: #ffffff6f;
+}
+
+/* Estilos de los círculos */
+.imagenesDescripcion {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.imagenDescripcion {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.imagenDescripcion img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left{
+    align-items: center;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-line {
+    background-color: #ccc;
+    height: 1px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Estilos de los íconos de redes sociales */
+
+.footer-right a img {
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+}

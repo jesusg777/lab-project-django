@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/home_estudiante.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/assets/css/materia_detalles.css">
+<title>Página Principal</title>
+</head>
+
+<body>
+  <header>
+    {%include 'include/header.html'%}
+  </header>
+
+  <section class="contenido-principal">
+
+    <div class="contenedor-left">
+      <div class="div-nombre">
+        <p class="nombre-materia"></p>
+      </div>
+      
+      <div class="comentarios">
+      </div>
+      
+    </div>
+
+    <h3>Detalles</h3>
+
+    <div class="container_detalle_materia">
+        <div class="contenido_detalle">
+          <label for="codigoMateria" class="txt_negrita">Código: {{object.codigoMateria}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="nombreMateria" class="txt_negrita">Nombre: {{object.nombreMateria}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="profesorAsignado" class="txt_negrita">Profesor Asignado: {{object.profesorAsignado}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="cantCreditos" class="txt_negrita">Créditos: {{object.cantCreditos}}</label>
+          
+        </div>
+      </div>
+      <div class="container_detalle_materia">
+        <div class="contenido_detalle">
+          <label for="horario" class="txt_negrita">Horario: {{object.horario}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="ubicacion" class="txt_negrita">Ubicacion: {{object.ubicacion}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="puntuacion" class="txt_negrita">Puntuación: {{object.puntuacion}}</label>
+          
+        </div>
+        <div class="contenido_detalle">
+          <label for="semestre" class="txt_negrita">Semestre: {{object.semestre}}</label>
+          
+        </div>
+            <!-- Botón para volver a la vista principal (Home) -->
+        <a href="/home_estudiante/" type="submit" class="btn btn-primary">
+          <button type="button" class="boton_volver">Volver</button>
+        </a>
+      </div>
+  
+
+
+
+  </section>
+
+  <footer>
+    {%include 'include/footer.html'%}
+  </footer>
+</body>
+
+</html>

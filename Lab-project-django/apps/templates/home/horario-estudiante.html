@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/horarioEstudiante.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<title>Página Principal</title>
+</head>
+
+<body>
+    <header>
+      {%include 'include/header.html'%}
+    </header>
+
+  <main>
+    <br>
+    <h1 class="tituloHorario"></h1>
+    <br>
+    <div class="horario">
+      <div class="dia">
+        <div class="nombre-dia">Lunes</div>
+        <div class="Lunes">
+        </div>
+      </div>  
+      <div class="dia">
+        <div class="nombre-dia">Martes</div>
+        <div class="Martes">
+        </div>
+      </div>
+      <div class="dia">
+        <div class="nombre-dia">Miercoles</div>
+        <div class="Miercoles">
+        </div>
+      </div>
+      <div class="dia">
+        <div class="nombre-dia">Jueves</div>
+        <div class="Jueves">
+        </div>
+      </div>
+      <div class="dia">
+        <div class="nombre-dia">Viernes</div>
+        <div class="Viernes">
+        </div>
+      </div>
+      <div class="dia">
+        <div class="nombre-dia">Sabado</div>
+        <div class="Sabado">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="contenedorBotonesMaterias">
+        <a href="/agregarMateria/"><button class="botones"><h3>Agregar materia</h3></button></a>
+        <a href="/eliminarMateria/"><button class="botones"><h3>Eliminar materia</h3></button></a>
+    </div>
+  </main>
+
+  <footer>
+    {%include 'include/footer.html'%}
+  </footer>
+  <script src="main3.js" type="module"></script>
+</body>
+  
+</html>

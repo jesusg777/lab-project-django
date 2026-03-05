@@ -1,0 +1,316 @@
+/* Estilos del encabezado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    min-height: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header {
+    background-color: #FF6E1A;
+    text-align: center;
+    padding: 0px 10;
+    position: relative;
+    height: 11%;
+}
+
+.header-top {
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
+    /*align-items: center;*/
+}
+
+.left-header {
+    position: relative;
+}
+
+.logoHeader {
+    margin-top: 0px;
+    height: 100%;
+}
+
+.image-upload {
+    cursor: pointer;
+}
+
+.half-circle {
+    width: 230px;
+    height: 110px;
+    background-color: #fff;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.right-header ul {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.right-header li {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.header-button {
+    background-color: #FF6E1A;
+    color: #fff;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.header-button:hover {
+    background-color: #ffffff6f;
+}
+
+
+.img-perfil {
+    height: 50px;
+    width: 50px;
+}
+
+.img-perfil img {
+    height: 100%;
+    width: 100%;
+}
+.desktop-menu {
+    /* Estilos base del menú */
+    position: absolute;
+    top: 75%; /* Ajusta la distancia desde la parte superior */
+    right: 3%; /* Ajusta la distancia desde el borde derecho */
+    width: 200px;
+    background-color: #ccc; /* Fondo oscuro */
+    border: 1px solid #222; /* Borde más oscuro */
+    border-radius: 20px; /* Bordes más redondeados */
+    padding: 10px;
+    display: none;
+    
+  }
+.desktop-menu.active {
+    display: block;
+    /* Otros estilos que desees aplicar cuando el menú está activo */
+  }
+  
+.menu-options {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+.menu-options button {
+    background-color: #555; /* Color de fondo más oscuro */
+    border: none;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 20px; /* Crea un rectángulo circular */
+    cursor: pointer;
+    text-align: center; /* Alinea el texto al centro */
+    display: block;
+    width: 100%; /* Ocupa todo el ancho */
+    margin-bottom: 5px;
+    
+  }  
+.menu-options button a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayados */
+    font-family: 'DM Sans', sans-serif; /* Cambia la fuente del texto */
+  }
+  
+.menu-options button:hover a {
+    color: rgb(188, 188, 169); /* Color del texto al pasar el mouse */
+  }
+  
+main {
+    min-height: 70%;
+}
+
+/* Estilos del footer */
+footer {
+    height: 15%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left{
+    align-items: center;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-line {
+    background-color: #ccc;
+    height: 1px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+
+.footer-right a img {
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+}
+
+.contenedor-principal {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.titulo-page {
+    margin: 10px;
+    padding:10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.cuadrado-izquierdo {
+    width: 50%;
+    height: 100%;
+    
+}
+
+.caja-gris {
+  background-color: #f2f2f2;
+  height: 90%;
+  width: 80%;
+  overflow-y: scroll;
+  margin: 15px;
+  direction: rtl; 
+  border-radius: 15px;
+    
+}
+
+.caja-gris::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f2f2f2;
+
+}
+
+
+.caja-gris::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.materia-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6E1A;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 25px auto;
+    margin-bottom:10px ;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    width: 70%; /* Asegura que los botones ocupen todo el ancho del cuadro */
+    font-size: 15px;
+}
+
+
+/* Style for the active button */
+.materia-button.active {
+  background-color: #ccc;
+}
+
+.cuadrado-derecho {
+    width: 50%;
+    height: 100%;
+}
+
+.active {
+    display: none;
+}
+
+.clase-info {
+    /* display: none; Inicialmente oculta la caja de información */
+    background-color: #FF6E1A;
+    margin: 0 auto;
+    border-radius: 10px; /* Coloca la caja de información de manera absoluta */
+    height: 100%;
+    width: 50%;
+    padding: 30px;
+}
+
+.img-profesor {
+
+    width: 35%;
+    height: 35%;
+    margin: 0 auto;
+}
+
+.img-profesor img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.info {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.info p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.boton-ver {
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.boton-ver button{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe8db;
+    color: #ff780a;
+    border-radius: 100px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}

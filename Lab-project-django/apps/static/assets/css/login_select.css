@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.panelIzq, .panelDer{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.panelIzq{
+    background-color: #FF6E1A;
+}
+
+.panelDer{
+    background-color: white;
+}
+
+.contenedorFotoEst img, .contenedorFotoProf img{
+    margin-top: 18%;
+    margin-left: 38%;
+    height: 150px;
+}
+
+.contenedorFotoEst p{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.contenedorFotoProf p{
+    font-size: 40px;
+    color: #FF6E1A;
+    text-align: center;
+}
+
+.contenedorFotoEst button{
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: white;
+    color: #FF6E1A;
+    height: 40px;
+    width: 200px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+.contenedorFotoProf button{
+    border-radius: 25px;
+    border-color: transparent;
+    background-color: #FF6E1A;
+    color: white;
+    height: 40px;
+    width: 200px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+.contenedorFotoEst button:hover{
+    background-color: #FFB58A;
+}
+
+.contenedorFotoProf button:hover{
+    background-color: #FFB58A;
+}

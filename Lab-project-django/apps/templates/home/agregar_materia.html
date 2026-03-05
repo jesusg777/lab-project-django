@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/agregarMateria.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="apps\static\assets\css\agregarMateria.css">
+<title>Página Principal</title>
+</head>
+
+<body>
+    <header>
+      {%include 'include/header.html'%}
+    </header>
+
+  <section class="contenido-principal">
+    <div class="contenedor-left">
+      <div class="div-nombre">
+        <p class="nombre-materia"></p>
+      </div>
+      
+      <div class="comentarios">
+
+      </div>
+      
+
+    </div>
+    <div class="form_materia_crear">
+    <form method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="codigoMateria" class="txt_negrita">Código</label>
+        {{form.codigoMateria}}
+      </div>
+      <div class="form-group">
+        <label for="nombreMateria" class="txt_negrita">Nombre</label>
+        {{form.nombreMateria}}
+      </div>
+      <div class="form-group">
+        <label for="profesorAsignado" class="txt_negrita">Profesor Asignado</label>
+        {{form.profesorAsignado}}
+      </div>
+      <div class="form-group">
+        <label for="cantCreditos" class="txt_negrita">Créditos</label>
+        {{form.cantCreditos}}
+      </div>
+    </div>
+    <div class="form_materia_crear">
+      <div class="form-group">
+        <label for="horario" class="txt_negrita">Horario</label>
+        {{form.horario}}
+      </div>
+      <div class="form-group">
+        <label for="ubicacion" class="txt_negrita">Ubicacion</label>
+        {{form.ubicacion}}
+      </div>
+      <div class="form-group">
+        <label for="puntuacion" class="txt_negrita">Puntuación</label>
+        {{form.puntuacion}}
+      </div>
+      <div class="form-group">
+        <label for="semestre" class="txt_negrita">Semestre</label>
+        {{form.semestre}}
+      </div>
+    
+      <button type="submit">Registrar</button>
+    </form>
+    </div>
+
+  </section>
+
+  <footer>
+    {%include 'include/footer.html'%}
+  </footer>
+</body>
+
+</html>

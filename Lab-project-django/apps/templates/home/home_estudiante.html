@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/home_estudiante.css">
+  <link rel="stylesheet" type="text/css" href="/static/assets/css/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<title>Página Principal</title>
+</head>
+
+<body>
+  <header>
+    {%include 'include/header.html'%}
+  </header>
+
+  <section class="contenido-principal">
+
+    <a href="/agregarMateria/" type="button">
+      <button type="button" class="boton_agregar_materia">Agregar</button>
+    </a> <!-- Boton crear -->
+      <div class="contenedor-item">
+        {%for materia in object_list%}
+
+        <div class="clase-card" ><img src="/static/assets/img/banner_materia.jpg">
+          <div class="clase-info"><p>{{materia.nombreMateria}} - {{materia.profesorAsignado.nombre}} {{materia.profesorAsignado.apellido}}</p>
+          </div>
+
+          <form method="POST" action="/eliminarMateria/{{materia.codigoMateria}}" class="form_materia">
+            {% csrf_token %}
+            <a href="/detallesMateria/{{materia.codigoMateria}}" title="Ver" type="button">
+              <button type="button" class="boton_ver_materia">Ver</button>
+            </a>
+            <a href="/editarMateria/{{materia.codigoMateria}}" title="Editar" type="button">
+              <button type="button" class="boton_editar_materia">Editar</button>
+            </a>
+            
+            <button onclick="return eliminar();" type="submit" class="boton_eliminar_materia">eliminar</button>
+          </form>
+
+        </div>
+
+        {% endfor %}
+      </div>
+  </section>
+
+  <footer>
+    {%include 'include/footer.html'%}
+  </footer>
+</body>
+
+</html>

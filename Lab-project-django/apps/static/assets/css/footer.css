@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left{
+    align-items: center;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-line {
+    background-color: #ccc;
+    height: 1px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Estilos de los íconos de redes sociales */
+
+.footer-right a img {
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+}

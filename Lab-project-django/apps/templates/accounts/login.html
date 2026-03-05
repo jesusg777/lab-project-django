@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/login_css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+    <title>Mi LMS</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Bienvenidos</h1>
+        <p class="subtext">Inicia sesión para continuar</p>
+        <form method="POST" id="formulario">
+            {% csrf_token %}
+            <label for="username" >Usuario:</label>
+            <input type="text" id="usuario" name="username" required>
+            <label for="password">Clave:</label>
+            <input type="password" placeholder="******" id="contrasena" name="password" required>
+
+            <div class="div-button">               
+                <a href="/home_estudiante/"></a><button type="submit">Iniciar Sesión</button>
+            </div>
+        </form>
+
+        <div class="div-button">               
+            <a href="/register/"><button>Registra</button></a>
+        </div>
+        {{msg}}
+    </div>
+    
+</body>
+<script src="iniciarSesionEst.js" type="module"></script>
+</html>
